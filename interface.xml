@@ -1,0 +1,11 @@
+<network>
+  <name>vm-net</name>
+  <bridge name="virbr0" delay="0" stp="off"/>
+  <forward mode="nat"/>
+  <ip address="192.168.122.1" netmask="255.255.255.0">
+    <dhcp>
+      <range start="192.168.122.2" end="192.168.122.254"/>
+      <host mac="52:54:00:28:bd:7f" ip="192.168.122.234"/>
+    </dhcp>
+  </ip>
+</network>
